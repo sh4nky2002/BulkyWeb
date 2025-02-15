@@ -1,0 +1,27 @@
+@* @model IEnumerable<MyAspNetCoreApp.Models.CompanyModel>
+
+@{
+    ViewData["Title"] = "Product List";
+} *@
+
+<h2> Company List</h2>
+
+<table id="tbldata" class="table table-bordered table-striped"  style="width:100%">
+    <thead>
+        <tr>
+           <th>Name</th>
+           <th>Address</th>
+           <th>City</th>
+           <th>State</th>
+           <th>Phone Number</th>
+
+        </tr>
+    </thead>
+
+</table>
+
+<a href="@Url.Action("Upsert", "Company")">Create New Company</a>
+
+@section Scripts{
+    <script src="~/js/company.js"></script>
+}

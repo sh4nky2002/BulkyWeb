@@ -1,0 +1,30 @@
+@model IEnumerable<MyAspNetCoreApp.Models.ProductModel>
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<h2>Product List</h2>
+
+<table id="tbldata" class="table table-bordered table-striped"  style="width:100%">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>ListPrice</th>
+            <th>ISBN</th>
+            <th>Price50</th>
+            <th>Price100</th>
+            <th>Author</th>
+            <th>Item</th>
+        </tr>
+    </thead>
+
+</table>
+
+<a href="@Url.Action("Upsert", "Product")">Create New Product</a>
+
+@section Scripts{
+    <script src="~/js/product.js"></script>
+}

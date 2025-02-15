@@ -7,9 +7,9 @@ a.navbar-brand[b-x56152hldr] {
   word-break: break-all;
 }
 
-a[b-x56152hldr] {
+/* a {
   color: #0077cc;
-}
+} */
 
 .btn-primary[b-x56152hldr] {
   color: #fff;

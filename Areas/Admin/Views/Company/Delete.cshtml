@@ -1,0 +1,53 @@
+@* @model MyAspNetCoreApp.Models.ProductModel
+
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-danger bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-white">Delete Product</h2>
+            </div>
+        </div>
+    </div>
+                <div class="card-body p-4">
+              <form method="post">
+            <input type="hidden" asp-for="Id" />
+
+    <div class="form-floating py-2 col-12">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" disabled class="form-control border-0 shadow" />
+        
+    </div>
+
+    <div class="form-floating py-2 col-12 ">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" disabled class="form-control border-0 shadow" />
+    </div>
+    <div class="form-floating py-2 col-12">
+        <label asp-for="ListPrice"></label>
+        <input asp-for="ListPrice" disabled class="form-control border-0 shadow" />
+    </div>
+    <div class="form-floating py-2 col-12">
+        <label asp-for="ISBN"></label>
+        <input asp-for="ISBN" disabled class="form-control border-0 shadow" />
+    </div>
+ <div class="form-floating py-2 col-12">
+        <label asp-for="Author"></label>
+        <input asp-for="Author" disabled class="form-control border-0 shadow" />
+    </div>
+     <div class="form-floating py-2 col-12">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" disabled class="form-control border-0 shadow" />
+    </div>
+     <div class="form-floating py-2 col-12">
+        <label asp-for="Price50"></label>
+        <input asp-for="Price50" disabled class="form-control border-0 shadow" />
+    </div>
+     <div class="form-floating py-2 col-12">
+        <label asp-for="Price100"></label>
+        <input asp-for="Price100" disabled class="form-control border-0 shadow" />
+    </div>
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div> *@

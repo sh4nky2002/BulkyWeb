@@ -1,0 +1,53 @@
+@model MyAspNetCoreApp.Models.ItemModel
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+<div class="row">
+    <div class="col-md-6">
+        <h2 class="text-white">Create Item</h2>
+    </div>
+</div>
+    </div>
+    <div class="card-body p-4">
+     <form method="post" class="row" enctype="multipart/form-data">
+    <div class="form-floating py-2 col-12">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control border-0 shadow" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-floating py-2 col-12 ">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control border-0 shadow" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-floating py-2 col-12">
+        <label asp-for="Discount"></label>
+        <input asp-for="Discount" class="form-control border-0 shadow" />
+        <span asp-validation-for="Discount" class="text-danger"></span>
+    </div>
+    
+
+    <div class="form-group form-check">
+        <input asp-for="IsPublished" class="form-check-input" />
+        <label class="form-check-label" for="IsPublished">Is Published?</label>
+    </div>
+
+    <div class="form-group form-check">
+        <input asp-for="DisplayInHomepage" class="form-check-input" />
+        <label class="form-check-label" for="DisplayInHomepage">Display In Homepage?</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>   
+</div>
+
+@{
+    ViewData["Title"] = "Create Item";
+}
+
+
+<div>
+    <a href="@Url.Action("Index", "Item")">Back to List</a>
+</div>
